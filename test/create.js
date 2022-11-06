@@ -45,4 +45,20 @@ t.test('Create', async t => {
 
     process.chdir(cwd);
   });
+
+  await t.test('TypeScript', async t => {
+    const dir = await Path.tempDir();
+    const cwd = process.cwd();
+    process.chdir(dir.toString());
+
+    const {stdout, stderr} = await execFile('node', [path, '--ts']);
+    t.match(stdout, /Generating plugin:/s);
+    t.equal(stderr, '');
+    t.ok(await dir.child('src', 'mojo-plugin-myplugin.ts').exists());
+    t.ok(await dir.child('package.json').exists());
+    t.match(await dir.child('src', 'mojo-plugin-myplugin.ts').readFile('utf8'), /export default function/s);
+    t.match(await dir.child('package.json').readFile('utf8'), /@mojojs/s);
+
+    process.chdir(cwd);
+  });
 });

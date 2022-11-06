@@ -16,5 +16,11 @@ Create a mojo.js plugin.
 npm create @mojojs/plugin
 ```
 
+TypeScript is also supported.
+
+```
+npm create @mojojs/plugin -- --ts
+```
+
 Alternatively you can also just fork the [mojo-plugin-ejs](https://github.com/mojolicious/mojo-plugin-ejs) repo on
 GitHub.

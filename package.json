@@ -6,7 +6,7 @@
     "mojojs"
   ],
   "dependencies": {
-    "@mojojs/core": "^1.2.1",
+    "@mojojs/core": "^1.10.0",
     "@mojojs/path": "^1.5.2",
     "@mojojs/util": "^1.0.0"
   },
