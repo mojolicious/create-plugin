@@ -24,3 +24,9 @@ npm create @mojojs/plugin -- --ts
 
 Alternatively you can also just fork the [mojo-plugin-ejs](https://github.com/mojolicious/mojo-plugin-ejs) repo on
 GitHub.
+
+## Support
+
+If you have any questions the documentation might not yet answer, don't hesitate to ask in the
+[Forum](https://github.com/mojolicious/mojo.js/discussions), on [Matrix](https://matrix.to/#/#mojo:matrix.org), or
+[IRC](https://web.libera.chat/#mojo).
